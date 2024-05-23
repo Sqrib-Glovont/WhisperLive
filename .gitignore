@@ -1,0 +1,4 @@
+.venv-whisperlive/*
+whisper_live/__pycache__/*
+*.wav
+*.srt

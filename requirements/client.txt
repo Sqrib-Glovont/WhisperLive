@@ -1,4 +1,6 @@
 PyAudio
+yt_dlp
+pydub
 ffmpeg-python
 scipy
 websocket-client
