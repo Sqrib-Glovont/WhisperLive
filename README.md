@@ -31,7 +31,7 @@ docker run -it --gpus all -p 9090:9090 ghcr.io/collabora/whisperlive-gpu:latest
 ## Running the Client
 To transcribe a YouTube video
 
-### Run the Client Script:
+### Run the Client Script (from youtube link):
 To transcribe a YouTube video with default settings, run:
 
 ```bash
@@ -46,5 +46,23 @@ Default settings:
 To run the script with custom values:
 ```bash
 python run_client_YT.py --url "YOUR_YOUTUBE_URL" --lang "LANGUAGE_CODE" --model "MODEL_SIZE"
+```
+
+### Running the Client from Microphone
+To run the WhisperLive client with microphone input, use the run_client.py script:
+
+```bash
+python run_client.py
+```
+
+Default settings:
+
+1. Language: fr (French)
+2. Model: base
+
+To run the script with custom values:
+
+```bash
+python run_client.py --lang "LANGUAGE_CODE" --model "MODEL_SIZE"
 ```
 
