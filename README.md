@@ -10,7 +10,16 @@ src="https://img.youtube.com/vi/0PHWCApIcCI/0.jpg" style="background-color:rgba(
 
 
 ## Installation
+
+### Docker:
 - Ensure Docker is installed and running on your machine.
+
+### Run Setup Script:
+Ensure you have the required libraries installed by running the setup.bat script:
+
+```bash
+setup.bat
+```
 
 ## Running the Server
 To run the WhisperLive server with GPU support, use the following command:
@@ -22,13 +31,6 @@ docker run -it --gpus all -p 9090:9090 ghcr.io/collabora/whisperlive-gpu:latest
 ## Running the Client
 To transcribe a YouTube video
 
-### Run Setup Script:
-Ensure you have the required libraries installed by running the setup.bat script:
-
-```bash
-setup.bat
-```
-
 ### Run the Client Script:
 To transcribe a YouTube video with default settings, run:
 
@@ -37,9 +39,9 @@ python run_client_YT.py
 ```
 Default settings:
 
-YouTube URL: https://www.youtube.com/watch?v=cx4LaLSdCa4&ab_channel=BloombergTelevision
-Language: en (English)
-Model: small
+1. YouTube URL: https://www.youtube.com/watch?v=cx4LaLSdCa4&ab_channel=BloombergTelevision
+2. Language: en (English)
+3. Model: small
 
 To run the script with custom values:
 ```bash
